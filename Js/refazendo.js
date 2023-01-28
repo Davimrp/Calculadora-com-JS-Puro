@@ -17,7 +17,7 @@ const inserirNumero = (e) => {
         tela.innerHTML += e.target.textContent;
     }
 }
-numeros.forEach((e)=> e.addEventListener('click', f1))
+numeros.forEach((e)=> e.addEventListener('click', inserirNumero))
 
 //03 - calcular
 const calcular= ()=>{
@@ -43,7 +43,7 @@ const inserirOperador = (e) =>{
     operador = e.target.textContent;
     primeiroDigito = true
 };
-operadores.forEach((e) => e.addEventListener('click', f2))
+operadores.forEach((e) => e.addEventListener('click', inserirOperador))
 
 // Apagar um digito 
 const apagar = () =>{
