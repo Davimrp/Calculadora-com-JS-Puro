@@ -9,7 +9,7 @@ let numeroDigitado;
 let operacaoPendente = operador == undefined;
 
 //01 - numeros 
-const f1 = (e) => {
+const inserirNumero = (e) => {
     if (primeiroDigito) {
         tela.innerHTML = e.target.textContent;
         primeiroDigito = false
@@ -37,7 +37,7 @@ const calcular= ()=>{
 }
 
 //02 - operador
-const f2 = (e) =>{
+const inserirOperador = (e) =>{
     calcular()
     numeroDigitado = parseFloat(tela.textContent);
     operador = e.target.textContent;
